@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.PresentationControlsDemo"
+             Title="PresentationControlsDemo">
+    <ScrollView>
+        <StackLayout>
+            <BoxView BackgroundColor="Azure" HeightRequest="200"/>
+
+            <Label Text="XAMARIN" TextColor="Orange"
+               FontAttributes="Bold"
+               FontSize="Micro"
+               FontFamily="Arial"
+               HorizontalTextAlignment="Center"/>
+
+            <Image Source="dotnet_bot.svg"/>
+
+            <Ellipse Fill="DarkRed"
+                 Stroke="DarkGreen"
+                 StrokeThickness="10"
+                 HeightRequest="200"
+                 HorizontalOptions="Center"
+                 WidthRequest="200"/>
+
+            <Line Stroke="Blue"
+              X1="40"
+              Y1="100"
+              X2="100"
+              Y2="50"
+              StrokeThickness="10"/>
+
+            <Rectangle Fill="DarkRed"
+                 Stroke="Azure"
+                 StrokeThickness="10"
+                 HeightRequest="200"
+                 HorizontalOptions="End"
+                 WidthRequest="200"
+                 RadiusX="10"
+                 RadiusY="20"/>
+
+            <Polygon Fill="LightBlue"
+                 Points="40,10,70,80,10,50"
+                 Stroke="Orange"
+                 StrokeThickness="5"/>
+
+            <Polygon Fill="Yellow"
+                 Points="40,10,70,80,10,50"
+                 StrokeDashArray="1,1"
+                 StrokeDashOffset="3"
+                 Stroke="Green"
+                 StrokeThickness="5"/>
+
+            <!--<Path Aspect="Uniform"
+                  Data="M 10,100 L 100,100 100,50Z"
+                  Stroke="Yellow"
+                  HorizontalOptions="Center"
+                  />-->
+            
+
+            <Border Stroke="#C49B33"
+                    StrokeThickness="4"
+                    Background="Blue"
+                    Padding="16,8"
+                    HorizontalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="40,0,0,40"/>
+                </Border.StrokeShape>
+                <Label Text="XAMARIN" TextColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+            </Border>
+
+            <Label Text="XAMARIN" TextColor="Orange"
+               FontAttributes="Bold"
+               FontSize="Micro"
+               FontFamily="Arial"
+               HorizontalTextAlignment="Center"/>
+
+            <Frame BackgroundColor="Gray">
+                <Image Source="dotnet_bot.svg"
+                       WidthRequest="100"
+                       HeightRequest="100"/>
+            </Frame>
+
+            <WebView Source="https://tureng.com/tr/turkce-ingilizce"
+                     HeightRequest="700"/>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

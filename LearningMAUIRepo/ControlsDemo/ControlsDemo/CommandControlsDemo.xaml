@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.CommandControlsDemo"
+             Title="CommandControlsDemo">
+    <StackLayout>
+        <Button x:Name="btnTest" Text="Bana Tikla"
+                Clicked="btnTest_Clicked"/>
+        <ImageButton Source="dotnet_bot.svg"
+                     Clicked="btnTest_Clicked"/>
+
+        <RadioButton x:Name="radio1" CheckedChanged="RadioButton_CheckedChanged"
+                     Content="Option 1" GroupName="gp1"/>
+        <RadioButton x:Name="radio2" CheckedChanged="RadioButton_CheckedChanged"
+                     Content="Option 2" GroupName="gp1"/>
+        <RadioButton x:Name="radio3" CheckedChanged="RadioButton_CheckedChanged"
+                     Content="Option 3" GroupName="gp2"/>
+        <RadioButton x:Name="radio4" CheckedChanged="RadioButton_CheckedChanged"
+                     Content="Option 4" GroupName="gp2"/>
+
+        <SearchBar x:Name="searchControl"
+                   SearchButtonPressed="searchControl_SearchButtonPressed"/>
+
+        <SwipeView>
+            <SwipeView.LeftItems>
+                <SwipeItems>
+                    <SwipeItem
+                        BackgroundColor="LightBlue"
+                        Invoked="SwipeItem_Invoked"
+                        Text="Favourite"/>
+                    <SwipeItem
+                        BackgroundColor="LightPink"
+                        Invoked="SwipeItem_Invoked"
+                        Text="Delete"/>
+                </SwipeItems>
+            </SwipeView.LeftItems>
+            <Grid BackgroundColor="LightCoral"
+                  HeightRequest="60"
+                  WidthRequest="300">
+                <Label HorizontalOptions="Center"
+                           Text="Swipe Right"
+                           VerticalOptions="Center"/>
+            </Grid>
+        </SwipeView>
+    </StackLayout>
+</ContentPage>
